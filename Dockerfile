@@ -9,10 +9,10 @@ FROM debian:latest
 
 LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
-ENV HOST toto.com
-ENV PORT 3000
+ENV HOST=toto.com
+ENV PORT=3000
 
-ENV GEKKO_VERSION v0.6.8
+ENV GEKKO_VERSION=v0.6.8
 
 # Update & install packages for installing hashcat
 RUN apt-get update && \
